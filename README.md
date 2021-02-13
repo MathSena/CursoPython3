@@ -2,8 +2,8 @@
 Curso de Python 3 do Básico Ao Avançado (com projetos reais). 
 
 ### As tecnologias utilizadas são:
-* [Python 3](https://www.java.com/pt-BR/)
-* [Django](https://www.java.com/pt-BR/)
+* [Python 3](https://www.python.org/)
+* [Django](https://www.djangoproject.com/)
 
 ### O que temos nesse curso?
 * Python 3 básico (com lógica de programação)
