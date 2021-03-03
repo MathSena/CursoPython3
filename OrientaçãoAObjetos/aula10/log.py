@@ -5,6 +5,7 @@ class LogMixin:
             f.write(msg)
             f.write('\n')
 
+
     def log_info(self, msg):
         self.write(f'INFO: {msg}')
 

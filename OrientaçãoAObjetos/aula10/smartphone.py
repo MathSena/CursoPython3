@@ -35,6 +35,7 @@ class Smartphone(Eletronico,LogMixin):
             self.log_error(error)
             return
 
+
         info = f'{self._nome} foi desligado'
         print(info)
         self.log_info(info)

@@ -10,3 +10,9 @@ ERRO: Iphone já está conectado
 ERRO: Iphone já está conectado
 ERRO: Iphone já está conectado
 INFO: Iphone foi desligado
+INFO: Iphone não está ligado
+INFO: Iphone conectado
+ERRO: Iphone já está conectado
+ERRO: Iphone já está conectado
+ERRO: Iphone já está conectado
+INFO: Iphone foi desligado

@@ -8,6 +8,7 @@ class Eletronico:
             return
         self._ligado = True
 
+
     def desligar(self):
         if self._ligado:
             return

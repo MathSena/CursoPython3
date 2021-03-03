@@ -1,7 +1,6 @@
 from smartphone import Smartphone
 
 smartphone = Smartphone('Iphone')
-
 smartphone.conectar()
 smartphone.desligar()
 smartphone.ligar()
