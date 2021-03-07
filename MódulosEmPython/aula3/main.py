@@ -2,12 +2,41 @@
 import os
 
 
-caminho_procura = 'C:/Users/MathS/OneDrive/Imagens/Amigos/Camp'
-termo_procura = '09'
+caminho_procura = input(('Digite um caminho: '))
+termo_procura = input('Digite um termo: ')
+
+def formata_tamanho(tamanho):
+    base = 1024
+    kilo = base
+    mega = base ** 2
+    giga = base ** 3
+    tera = base ** 4
+    peta = base ** 5
+
+    if tamanho < kilo:
+        tamanho = base
+        texto = 'B'
+    elif tamanho<mega:
+        tamanho /= kilo
+        texto ='K'
+    elif tamanho< giga:
+        tamanho /= mega
+        texto = 'M'
+    elif tamanho< tera:
+        tamanho /= giga
+        texto= 'G'
+    elif tamanho < peta:
+        tamanho /= tera
+        texto = 'T'
+    else:
+        tamanho /= peta
+        texto = 'P'
+
+    tamanho = round(tamanho, 2)
+    return f'{tamanho}{texto}'
 
 conta = 0
 for raiz, diretorios, arquivos in os.walk(caminho_procura):
-    print(arquivos)
     for arquivo in arquivos:
         if termo_procura in arquivo:
             try:
@@ -21,6 +50,8 @@ for raiz, diretorios, arquivos in os.walk(caminho_procura):
                 print('Caminho do arquivo: ', arquivo)
                 print('Nome do arquivo: ', nome_arquivo)
                 print('Extensão: ', ext_arquivo)
+                print('Tamanho', tamanho)
+                print('Tamanho formatado', formata_tamanho(tamanho))
 
             except PermissionError as e:
                 print('Sem permissão!')
