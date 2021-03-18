@@ -9,5 +9,12 @@ def index(request):
 
     })
 
+def ver_contato(request, contato_id):
+    contato = Contato.objects.get(id=contato_id)
+    return render(request, 'contatos/index.html',{
+        'contato': contato
+
+    })
+
 
 
