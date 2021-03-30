@@ -1,0 +1,23 @@
+{
+    "1": {
+        "nome": "Matheus",
+        "sobrenome": "Sena",
+        "idade": 24,
+        "altura": 1.73,
+        "peso": 55.53
+    },
+    "2": {
+        "nome": "Maria",
+        "sobrenome": "Oliveira",
+        "idade": 52,
+        "altura": 1.67,
+        "peso": 57
+    },
+    "3": {
+        "nome": "Pedro",
+        "sobrenome": "Faria",
+        "idade": 32,
+        "altura": 1.95,
+        "peso": 113
+    }
+}
